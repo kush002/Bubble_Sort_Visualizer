@@ -1,0 +1,17 @@
+.num-holder{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 5rem;
+    /* background-color: red; */
+}
+
+.num{
+    display: inline-block;
+    background-color: #edb4eb;
+    padding: 0.5rem 0.5rem;
+    /* border: 2px solid black; */
+    width: 30px;
+    text-align: center;
+    /* height: 500px; */
+}
