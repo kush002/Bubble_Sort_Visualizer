@@ -8,7 +8,9 @@ let idx = 0;
 let order = 0;
 button.addEventListener('click', (e)=>{
     e.preventDefault();
-    
+    if(createDiv.textContent!= ''){
+        createDiv.textContent = ''
+    }
     const string = input.value;
    
     for(let char of string){
@@ -27,6 +29,9 @@ button.addEventListener('click', (e)=>{
    
     
     input.value = "";
+    console.log(string)
+    console.log(element)
+    document.forms['input-form'].reset();
     
     sort();
     
@@ -69,7 +74,7 @@ const createDivElement = function(){
     
     
     const call = async ()=>{
-        for(let i=0;i<arrayElement.length-i;i++){
+        for(let i=0;i<arrayElement.length;i++){
             
             
              
